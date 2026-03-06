@@ -234,7 +234,8 @@ Database
 
 MongoDB Atlas
 
-👨‍💻 Author
+If this dashboard needed to handle 1 million write-events per minute, I would redesign the backend to use a scalable event-driven architecture. Instead of writing events directly to the database, the backend would send events to a message queue system like Kafka or RabbitMQ. This would allow multiple worker services to process events asynchronously and store them in the database without overloading the server. I would also use database sharding, caching (Redis), and load balancing to distribute traffic across multiple servers. This architecture would improve performance, reliability, and scalability when handling very high traffic.
 
+👨‍💻 Author
 Sandeep Gautam
-Full Stack MERN Developer
+Full Stack Developer
